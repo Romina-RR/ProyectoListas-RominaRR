@@ -63,6 +63,7 @@ import com.google.gson.annotations.SerializedName
 import com.rominarodriguez.ncr1125_rodriguez_rivas_gleidi_romina.components.GalleryBottomBar
 import com.rominarodriguez.ncr1125_rodriguez_rivas_gleidi_romina.MainActivity
 import com.rominarodriguez.ncr1125_rodriguez_rivas_gleidi_romina.R
+import com.rominarodriguez.ncr1125_rodriguez_rivas_gleidi_romina.components.BotonEliminar
 import com.rominarodriguez.ncr1125_rodriguez_rivas_gleidi_romina.components.ModalConfirmacion
 import com.rominarodriguez.ncr1125_rodriguez_rivas_gleidi_romina.data.ApiService
 import com.rominarodriguez.ncr1125_rodriguez_rivas_gleidi_romina.ui.theme.AppTheme
@@ -315,26 +316,12 @@ fun TarjetaListaItem(
                     color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
                 )
             }
-
-            IconButton(
-                onClick = onDeleteClick,
-                modifier = Modifier.size(28.dp)
-            ) {
-                Box(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .clip(CircleShape)
-                        .background(MaterialTheme.colorScheme.onBackground),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Icon(
-                        imageVector = Icons.Default.Delete,
-                        contentDescription = null,
-                        tint = MaterialTheme.colorScheme.background,
-                        modifier = Modifier.size(16.dp)
-                    )
+            BotonEliminar(
+                onClick = {
+                    //accion de eliminar
                 }
-            }
+            )
+
         }
         HorizontalDivider(thickness = 1.dp)
     }

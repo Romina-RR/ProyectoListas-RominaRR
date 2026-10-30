@@ -45,6 +45,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.gson.annotations.SerializedName
+import com.rominarodriguez.ncr1125_rodriguez_rivas_gleidi_romina.components.BotonEliminar
 import com.rominarodriguez.ncr1125_rodriguez_rivas_gleidi_romina.data.ApiService
 import com.rominarodriguez.ncr1125_rodriguez_rivas_gleidi_romina.ui.theme.NCR1125_RODRIGUEZ_RIVAS_GLEIDI_ROMINATheme
 import kotlinx.coroutines.launch
@@ -208,25 +209,13 @@ fun TarjetaProductoItem(producto: ProductoItem) {
                 style = MaterialTheme.typography.titleMedium,
                 color = MaterialTheme.colorScheme.primary
             )
-                IconButton(
-                    onClick = { /* Acción para eliminar */ },
-                    modifier = Modifier.size(28.dp)
-                ) {
-                    Box(
-                        modifier = Modifier
-                            .fillMaxSize()
-                            .clip(CircleShape)
-                            .background(MaterialTheme.colorScheme.onBackground),
-                        contentAlignment = Alignment.Center
-                    ) {
-                        Icon(
-                            imageVector = Icons.Default.Delete,
-                            contentDescription = null,
-                            tint = MaterialTheme.colorScheme.background,
-                            modifier = Modifier.size(16.dp)
-                        )
-                    }
-                }}
+                BotonEliminar(
+                    onClick = {
+                    //accion de eliminar
+                         }
+                )
+
+            }
 
         }
 

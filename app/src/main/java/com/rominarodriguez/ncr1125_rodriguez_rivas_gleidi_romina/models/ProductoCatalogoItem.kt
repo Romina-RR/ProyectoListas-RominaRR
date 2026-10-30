@@ -24,6 +24,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
+import com.rominarodriguez.ncr1125_rodriguez_rivas_gleidi_romina.components.BotonEliminar
 import com.rominarodriguez.ncr1125_rodriguez_rivas_gleidi_romina.screens.catalogo.EditarProductoActivity
 import com.rominarodriguez.ncr1125_rodriguez_rivas_gleidi_romina.screens.catalogo.ProductoCatalogoItem
 
@@ -126,25 +127,12 @@ fun ProductoCatalogoItem(producto: ProductoCatalogoItem) {
                             )
                         }
                     }
-                    IconButton(
-                        onClick = { /* Acción para eliminar */ },
-                        modifier = Modifier.size(28.dp)
-                    ) {
-                        Box(
-                            modifier = Modifier
-                                .fillMaxSize()
-                                .clip(CircleShape)
-                                .background(MaterialTheme.colorScheme.onBackground),
-                            contentAlignment = Alignment.Center
-                        ) {
-                            Icon(
-                                imageVector = Icons.Default.Delete,
-                                contentDescription = null,
-                                tint = MaterialTheme.colorScheme.background,
-                                modifier = Modifier.size(16.dp)
-                            )
-                        }
-                    }
+
+                        BotonEliminar(
+                            onClick = {
+                                //accion de eliminar
+                            }
+                        )
                 }
             }
         }
