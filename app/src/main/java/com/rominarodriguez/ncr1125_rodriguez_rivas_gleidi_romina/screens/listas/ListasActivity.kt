@@ -251,8 +251,8 @@ fun ListaScreen(
 
 if(mostrarModal){
     ModalConfirmacion(
-        titulo = "Eliminar Lista",
-        mensaje = "¿Esta seguro de eliminar '${listaSeleccionada?.titulo}'?",
+        titulo = "¿Eliminar '${listaSeleccionada?.titulo}'?",
+        mensaje = "Esta acción no se puede deshacer",
         textobtnConfirmar = "Si, eliminar",
         onDismiss = {
             mostrarModal = false
@@ -317,9 +317,7 @@ fun TarjetaListaItem(
                 )
             }
             BotonEliminar(
-                onClick = {
-                    //accion de eliminar
-                }
+                onClick = onDeleteClick
             )
 
         }
