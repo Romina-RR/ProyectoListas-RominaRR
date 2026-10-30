@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NCR1125_RODRIGUEZ_RIVAS_GLEIDI_ROMINA</string>
+
+    <!--Main Activity -->
+    <string name="titulo1">¡Hola!</string>
+    <string name="titulo2">¿Hacemos una lista?</string>
+    <string name="title_activity_listas">ListasActivity</string>
+    <string name="logo_description">Logo Lista</string>
+    <string name="boton_text">Empecemos</string>
+
+    <!--Listas Activity-->
+    <string name="tituloLista">Mis Listas</string>
+    <string name="title_activity_nueva_lista">NuevaListaActivity</string>
+    <string name="title_activity_lista_detalle">ListaDetalleActivity</string>
+    <string name="title_activity_nuevo_producto">NuevoProductoActivity</string>
+    <string name="title_activity_editar_producto">EditarProductoActivity</string>
+
+</resources>
